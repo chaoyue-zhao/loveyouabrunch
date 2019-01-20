@@ -1,0 +1,23 @@
+html {
+    background: 
+        linear-gradient(to bottom, rgba(255,255,255,.2),rgba(255,255,255,.2)),
+        url(../assets/bgImg.jpg);
+        background-size: contain;
+    width: 100%;
+}
+
+.App {
+    display: grid; 
+    grid-template-areas: 
+    "header header header header"
+    "searchForm searchForm searchForm searchForm"
+    "gallery gallery gallery gallery"
+    "footer footer footer footer";
+    margin: 3rem;
+}
+
+
+    
+
+
+

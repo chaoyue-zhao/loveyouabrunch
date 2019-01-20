@@ -1,1 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
+@import "Abstracts/mixins.scss";
+@import "Abstracts/variables.scss";
+
+@import "Base/setup.scss";
+@import "Base/typography.scss";
+
+@import "Components/searchForm.scss";
+@import "Components/restaurantList.scss";
+
 @import "Layouts/header.scss";
+@import "Layouts/footer.scss";
+
+@import "Pages/app.scss"
+
+

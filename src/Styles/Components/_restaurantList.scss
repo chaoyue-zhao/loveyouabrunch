@@ -1,0 +1,86 @@
+.RestuarantList{
+    grid-area: gallery;
+    @include border;
+
+    &__gallery{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.RestaurantInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0 2rem;
+    @include border;
+    width: 25%;
+    position: relative;
+    
+    p {
+        margin: 0;
+    }
+  
+    &__img{
+        display: block;
+        width: 100%;
+        height: 25%;
+        margin-top: 2rem;
+        object-fit: cover;
+        filter: brightness(90%) grayscale(100%) contrast(130%);
+        transition: filter .5s;
+        
+
+        &:hover{
+            filter: brightness(100%) grayscale(0) contrast(100%);
+        }
+    }
+    
+    &__name{
+        margin: 1rem 0;
+        padding: 0;
+        @include hover;
+    }
+
+    &__para{
+        @include hover;
+        margin-bottom: 2rem;
+    }
+
+    &__icon {
+        margin-right: 1rem;
+    }
+
+    &__rating {
+        margin-top: 2rem;
+    }
+
+    &__reviewCount {
+        margin-top: 1rem;
+        @include hover;
+    }
+    
+    &__website {
+        text-decoration: none;
+        color: $primary-color;
+        @include hover;
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    &__yelp {
+        display: inline-block;
+        width: 8rem;
+        filter: brightness(90%) grayscale(100%) contrast(130%);
+        transition: filter .5s;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        &:hover{
+            filter: brightness(100%) grayscale(0) contrast(100%);
+        }
+    }
+}

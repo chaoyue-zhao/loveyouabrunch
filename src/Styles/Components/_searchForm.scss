@@ -1,0 +1,63 @@
+.searchForm {
+    grid-area: searchForm;
+    @include border;
+    padding: 2rem 0;
+    
+
+    form {
+       display: flex;
+       justify-content: space-around;
+       align-items: center; 
+    }
+
+    &__label {
+        @include hover;
+    }
+
+    &__input {
+        width: 60%;
+        padding: 1rem;
+        background: transparent;
+        border: none; 
+        border-bottom: 2px solid $primary-color;
+        font-family: 'Special Elite', cursive;
+
+        &:focus, &:active, &:hover {
+            outline: none;
+            border-bottom: 2px solid $accent-color;
+        }
+
+        &::-webkit-input-placeholder {
+            font-family: 'Special Elite', cursive;
+        }
+    }
+
+    &__button {
+        font-family: 'Special Elite', cursive;
+        background-color: transparent;
+        border: 2px solid $primary-color;
+        padding: 1rem 2rem;
+        color: $primary-color;
+
+        &:hover {
+            color: $accent-color;
+            border: 2px solid $accent-color;
+            transform: translateY(-1px);
+        }
+
+        &:active {
+            transform: translateY(0px);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__icon {
+        font-size: 2rem;
+        margin-left: 1rem;
+        color: $primary-color;
+    }
+
+}

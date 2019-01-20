@@ -1,0 +1,23 @@
+@mixin border {
+    box-shadow: 0 0 0 2px $primary-color, inset 0 0 0 1px $primary-color;
+}
+
+@mixin centerFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centerAb {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+@mixin hover {
+    &:hover{
+        color: $accent-color;
+    }
+}
+    

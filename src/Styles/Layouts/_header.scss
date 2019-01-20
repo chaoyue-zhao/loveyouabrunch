@@ -1,0 +1,60 @@
+.header {
+    display: flex;
+    grid-area: header;
+    @include border;
+
+    &__logo{
+        font-size: 10rem;
+        flex: 0 0 16.6%;
+        @include border;
+        @include hover;
+        position: relative;
+    }
+
+    &__logoImg{
+        position: absolute;
+        @include centerAb;
+    }
+
+    &__main {
+        flex: 8;
+        @include border;
+        @include centerFlex;
+        @include hover;
+    }
+
+    &__date {
+        margin-bottom: 0;
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__tagline {
+        margin-top: 0;
+    }
+
+    &__weather {
+        flex: 0 0 16.6%;
+        @include border;
+        @include hover;
+    }
+
+}
+
+.weatherData {
+    @include centerFlex;
+    margin-top: 2rem;
+
+
+    &__currentTemp {
+        font-size: $large-font-size;
+        margin: 0;
+    }
+
+    &__description {
+        margin: 0;
+    }
+}
+
