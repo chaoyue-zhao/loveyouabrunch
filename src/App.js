@@ -37,7 +37,11 @@ class App extends Component {
         <RestaurantList 
           searchLocationQuery = {this.state.searchLocationQuery}/> 
         <Footer 
-          text = 'Built with &hearts; in the beautiful city of Toronto, Canada. &#169; 2019 by Chaoyue Zhao. All rights reserved.'/>
+          message = 'Built with &hearts; in the beautiful city of Toronto, Canada. Powered by Yelp Fusion. Design inspired by Sea Harvest.'
+
+          thanks = 'Special thanks to Karley, Tiff, Shangni, Katie, Mark and the amazing HackerYou team. You have never failed to inspire me going. '
+
+          copyright = '&#169; 2019 by Chaoyue Zhao. All rights reserved.'/>
       </div>
     );
   }

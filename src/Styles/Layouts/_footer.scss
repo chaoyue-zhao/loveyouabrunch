@@ -4,4 +4,8 @@
 
     @include centerFlex;
     padding: 2rem;
+
+    p {
+        margin: 0;
+    }
 }
