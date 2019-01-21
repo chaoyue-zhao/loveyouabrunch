@@ -16,6 +16,7 @@
     padding: 0 2rem;
     @include border;
     width: 25%;
+    max-height: 50rem;
     position: relative;
     
     p {
@@ -25,7 +26,7 @@
     &__img{
         display: block;
         width: 100%;
-        height: 25%;
+        height: 40%;
         margin-top: 2rem;
         object-fit: cover;
         filter: brightness(90%) grayscale(100%) contrast(130%);

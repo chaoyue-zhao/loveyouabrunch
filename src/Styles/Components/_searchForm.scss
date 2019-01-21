@@ -21,6 +21,7 @@
         border: none; 
         border-bottom: 2px solid $primary-color;
         font-family: 'Special Elite', cursive;
+        color: $primary-color;
 
         &:focus, &:active, &:hover {
             outline: none;

@@ -9,7 +9,7 @@ class RestaurantList extends Component {
         //props.state is linked with the result sending back from its child a.k.a the result we returned in SearchForm element
         this.state = {
         //leverage the state to store the information return from API to make loading faster
-        results: [''],
+        results: [],
         errorState: null,
         loading: false,
         };
@@ -63,11 +63,14 @@ class RestaurantList extends Component {
     }
 
     renderRestaurantInfo () {
-
+        
         const RestaruantList = this.state.results.map((result) => {
             
             return (    
-                <div className = "RestaurantInfo">
+                <div 
+                    className = "RestaurantInfo"
+                    key = {result.id}
+                >
                     <img src = {result.image_url} alt = "" className = "RestaurantInfo__img" />
                     <h2 className = "heading-tertiary RestaurantInfo__name">{result.name}</h2>
                     
@@ -76,7 +79,7 @@ class RestaurantList extends Component {
                         icon = "map-marker-alt" 
                         className = "RestaurantInfo__icon"
                         aria-label = "address:" />
-                        Placeholder for address
+                        {result.location.display_address[0]}, {result.location.display_address[1]}
                     </p>
                     
                     <p className = "RestaurantInfo__para">
@@ -86,11 +89,9 @@ class RestaurantList extends Component {
                         aria-label = "phone number:" />
                         {result.phone}
                     </p>
-                    
 
                     <img 
-                        src = {require(`../assets/yelp_stars/regular/5.png`)}
-                        // src = {require(`../assets/yelp_stars/regular/${result.rating}.png`)}  
+                        src = {require(`../assets/yelp_stars/regular/${result.rating}.png`)}
                         alt = {`yelp ratings: ${result.rating}/5`}
                         className = "RestaurantInfo__rating"/>
 
@@ -129,5 +130,3 @@ class RestaurantList extends Component {
 
 }
 export default RestaurantList
-
-// <p className = "RestaurantInfo__address">{result.location.display_address[0]}</p>
