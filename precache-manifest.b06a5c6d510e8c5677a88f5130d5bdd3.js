@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9f393a23660631ffe591",
-    "url": "/loveyouabrunch/static/css/main.fa0b6599.chunk.css"
+    "revision": "70398ea0aa00963a95f6",
+    "url": "/loveyouabrunch/static/css/main.aff8ce90.chunk.css"
   },
   {
-    "revision": "9f393a23660631ffe591",
-    "url": "/loveyouabrunch/static/js/main.9f393a23.chunk.js"
+    "revision": "70398ea0aa00963a95f6",
+    "url": "/loveyouabrunch/static/js/main.70398ea0.chunk.js"
   },
   {
     "revision": "3e6801ce8131a97ecbdb",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/loveyouabrunch/static/media/Yelp_trademark_RGB.9ea57640.png"
   },
   {
-    "revision": "0b192de7c6119c111b87369444866aaa",
+    "revision": "d670bd13979e8202daaac1e994d89583",
     "url": "/loveyouabrunch/index.html"
   }
 ];
